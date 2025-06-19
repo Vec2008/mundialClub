@@ -1,0 +1,304 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  background: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  /* Cor de fundo suave da paleta */
+  background: #bee4fb;
+  /* Cor de texto principal escura da paleta */
+  color: #0d486c;
+  line-height: 1.6; /* Melhorar legibilidade */
+}
+
+h2 {
+  text-align: center;
+  /* Cor para títulos */
+  color: #0d486c;
+  margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Aumentado o gap para melhor espaçamento */
+  justify-content: center;
+}
+
+.conteudo_form_sugestao,
+.conteudo_form_contato {
+  display: flex;
+  gap: 20px; /* Aumentado o gap */
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%; /* Garantir que ocupem a largura total para centralizar */
+  /* Aumentado a largura máxima para ocupar mais espaço */
+  max-width: 1400px; /* Aumentado o valor */
+}
+
+.caixa {
+  /* Cor de fundo da paleta */
+  background-color: #70b0d7;
+  padding: 20px; /* Aumentado o padding */
+  width: 100%; /* Ajuste para flexbox */
+  max-width: 350px; /* Largura máxima individual da caixa */
+  box-sizing: border-box;
+  /* Cor de texto para a caixa */
+  color: #0d486c;
+  /* Borda sutil */
+  border: 1px solid #456879;
+  border-radius: 8px; /* Bordas mais arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação suave */
+}
+
+.caixa:hover {
+    transform: translateY(-5px); /* Leve levantamento no hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais proeminente no hover */
+}
+
+
+.formulario {
+  /* Cor de fundo clara da paleta */
+  background-color: #bee4fb;
+  padding: 20px; /* Aumentado o padding */
+  /* Borda escura da paleta */
+  border: 1px solid #0d486c;
+  width: 100%; /* Ajuste para flexbox */
+  max-width: 800px; /* Largura máxima individual do formulário */
+  box-sizing: border-box;
+  border-radius: 8px; /* Bordas mais arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Animação no focus */
+}
+
+label {
+  display: block;
+  margin-top: 15px; /* Aumentado a margem */
+  margin-bottom: 5px;
+  font-weight: bold;
+  /* Cor para labels */
+  color: #0d486c;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px; /* Aumentado o padding */
+  box-sizing: border-box;
+  /* Cor de borda da paleta */
+  border: 1px solid #456879;
+  /* Cor de fundo branca para campos de input */
+  background-color: #fff;
+  /* Cor de texto para inputs */
+  color: #0d486c;
+  border-radius: 4px; /* Bordas levemente arredondadas */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Animação no focus */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    outline: none; /* Remover outline padrão */
+    border-color: #3d83ad; /* Mudar cor da borda no focus */
+    box-shadow: 0 0 5px rgba(61, 131, 173, 0.5); /* Adicionar sombra suave no focus */
+}
+
+
+textarea {
+  height: 120px; /* Aumentado a altura */
+  resize: vertical; /* Permitir redimensionamento vertical */
+}
+
+.linha {
+  display: flex;
+  gap: 15px; /* Aumentado o gap */
+  flex-wrap: wrap;
+}
+
+.linha>div {
+  flex: 1;
+  min-width: 180px; /* Garante que os campos não fiquem muito estreitos */
+}
+
+.botoes {
+  margin-top: 20px; /* Aumentado a margem */
+  display: flex;
+  gap: 15px; /* Aumentado o gap */
+  justify-content: flex-end; /* Alinhar botões à direita */
+}
+
+button {
+  padding: 12px 25px; /* Aumentado o padding */
+  border: none;
+  cursor: pointer;
+  border-radius: 5px; /* Bordas arredondadas */
+  transition: background-color 0.3s ease, transform 0.1s ease; /* Transição suave para hover e click */
+  font-size: 1rem; /* Tamanho de fonte padrão */
+}
+
+button[type="submit"] {
+  /* Cor de fundo escura da paleta */
+  background-color: #0d486c;
+  /* Cor de texto clara da paleta */
+  color: #bee4fb;
+}
+
+button[type="submit"]:hover {
+  /* Cor de fundo mais clara no hover */
+  background-color: #3d83ad;
+}
+
+button[type="submit"]:active {
+    transform: scale(0.98); /* Leve encolhimento ao clicar */
+}
+
+button[type="reset"] {
+  /* Cor de fundo da paleta */
+  background-color: #456879;
+  /* Cor de texto clara da paleta */
+  color: #bee4fb;
+}
+
+button[type="reset"]:hover {
+  /* Cor de fundo mais clara no hover */
+  background-color: #70b0d7;
+}
+
+button[type="reset"]:active {
+    transform: scale(0.98); /* Leve encolhimento ao clicar */
+}
+
+
+/* Mantido o CSS para o navbar conforme a modificação anterior */
+.container-fluid {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-toggler {
+  order: -1;
+  margin-right: auto;
+  /* Removido margin-right: 0; pois margin-right: auto já faz o trabalho */
+}
+
+.navbar-brand {
+  text-align: left;
+  /* Cor da marca */
+  color: #0d486c !important; /* Usado !important para sobrescrever Bootstrap se necessário */
+  font-weight: bold; /* Deixar a marca mais destacada */
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #3d83ad !important;
+}
+
+
+/* Adicionado estilo para links da navbar para usar a paleta */
+.navbar-nav .nav-link {
+    color: #0d486c !important; /* Cor dos links */
+    transition: color 0.3s ease, transform 0.2s ease; /* Animação no hover */
+    padding: 10px 15px; /* Aumentar área clicável */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #3d83ad !important; /* Cor no hover */
+    transform: translateY(-2px); /* Leve levantamento no hover */
+}
+
+.navbar-nav .nav-link.form {
+     color: #3d83ad !important; /* Cor para o link ativo */
+     font-weight: bold;
+     border-bottom: 2px solid #3d83ad; /* Indicador de link ativo */
+}
+
+.rodape-site {
+  /* Cor de fundo da paleta */
+  background: #70b0d7;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px; /* Espaço acima do rodapé */
+}
+
+.rodape__marca {
+  /* Cor da paleta */
+  color: #0d486c;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.rodape__direitos-autorais {
+  /* Cor da paleta */
+  color: #456879;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: right;
+  margin: 0;
+}
+
+@media (max-width: 768px) { /* Ajuste para telas menores, usando um breakpoint mais comum */
+    .conteudo_form_sugestao,
+    .conteudo_form_contato {
+        flex-direction: column; /* Empilha os elementos */
+        gap: 20px; /* Aumenta o espaço entre eles */
+        max-width: 95%; /* Ajusta largura máxima */
+    }
+
+    .caixa,
+    .formulario {
+        width: 100%; /* Ocupa largura total */
+        max-width: none; /* Remove limite de largura máxima */
+    }
+
+    .linha {
+        flex-direction: column; /* Empilha campos em telas pequenas */
+        gap: 15px;
+    }
+
+    .linha > div {
+        min-width: 100%; /* Ocupa largura total */
+    }
+
+    .botoes {
+        justify-content: center; /* Centraliza os botões em telas menores */
+    }
+
+    .rodape-site {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .rodape__direitos-autorais {
+        text-align: center;
+        margin-top: 15px;
+    }
+}
+
+/* Media query para ajustar a ordem em telas maiores se necessário */
+@media (min-width: 769px) { /* Volta para layout em linha em telas maiores */
+    .conteudo_form_sugestao,
+    .conteudo_form_contato {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .botoes {
+        justify-content: flex-end; /* Volta a alinhar à direita em telas maiores */
+    }
+}

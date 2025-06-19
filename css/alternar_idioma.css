@@ -1,0 +1,91 @@
+/* -------- SWITCH DE IDIOMA COM ANIMAÇÕES E POSICIONADO ABAIXO -------- */
+.switch {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  z-index: 1050;
+  width: 90px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: aparecer 0.8s ease-out;
+}
+
+/* Oculta o input */
+.switch input {
+  display: none;
+}
+
+/* Faixa deslizante */
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #3C3C3C, #2a2a2a);
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: background 0.4s ease, transform 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.slider:hover {
+  transform: scale(1.05);
+}
+
+/* Círculo */
+.slider::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 4px;
+  left: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Texto */
+.slider::after {
+  content: "PT";
+  position: absolute;
+  color: #fff;
+  font-size: 11px;
+  font-family: "Segoe UI", sans-serif;
+  top: 50%;
+  left: 68%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.4s ease;
+  opacity: 0.8;
+}
+
+/* Quando ativado */
+input:checked + .slider {
+  background: linear-gradient(135deg, #0E6EB8, #085a9b);
+}
+
+input:checked + .slider::before {
+  transform: translateX(52px);
+}
+
+input:checked + .slider::after {
+  content: "EN";
+  left: 32%;
+}
+
+/* Animação de entrada */
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* -------- FIM DO SWITCH DE IDIOMA MELHORADO -------- */

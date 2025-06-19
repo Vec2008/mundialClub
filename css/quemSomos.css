@@ -1,0 +1,252 @@
+/* File: pagesMundialClup/css/quemSomos.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    background: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: "Inter", sans-serif; /* Mantido a fonte original */
+    /* Cor de fundo suave da paleta */
+    background: #bee4fb;
+    /* Cor de texto principal escura da paleta */
+    color: #0d486c;
+    line-height: 1.6; /* Melhorar legibilidade */
+}
+
+.quem-somos {
+    /* Cor de fundo suave da paleta */
+    background: #bee4fb;
+    padding: 60px 20px; /* Aumentado o padding */
+    text-align: center;
+}
+.navbar-toggler {
+  order: -1;
+  margin-right: auto;
+  /* Removido margin-right: 0; pois margin-right: auto já faz o trabalho */
+}
+
+.navbar-brand {
+  text-align: left;
+  /* Cor da marca */
+  color: #0d486c !important; /* Usado !important para sobrescrever Bootstrap se necessário */
+  font-weight: bold; /* Deixar a marca mais destacada */
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #3d83ad !important;
+}
+
+.navbar-nav .nav-link {
+    color: #0d486c !important; /* Cor dos links */
+    transition: color 0.3s ease, transform 0.2s ease; /* Animação no hover */
+    padding: 10px 15px; /* Aumentar área clicável */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #3d83ad !important; /* Cor no hover */
+    transform: translateY(-2px); /* Leve levantamento no hover */
+}
+
+.navbar-nav .nav-link.active {
+     color: #3d83ad !important; /* Cor para o link ativo */
+     font-weight: bold;
+     border-bottom: 2px solid #3d83ad; /* Indicador de link ativo */
+}
+
+.quem-somos h2 {
+    /* Cor para títulos */
+    color: #0d486c;
+    font-family: "Inter-Bold", sans-serif;
+    font-size: 48px; /* Aumentado o tamanho da fonte */
+    font-weight: 700;
+    margin-bottom: 20px; /* Aumentado a margem */
+    /* Animação simples de fade-in */
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.quem-somos__subtitulo {
+    /* Cor de texto da paleta */
+    color: #456879;
+    font-family: "Inter", sans-serif;
+    font-size: 22px; /* Aumentado o tamanho da fonte */
+    font-weight: 400;
+    margin-bottom: 60px; /* Aumentado a margem */
+     /* Animação simples de fade-in com delay */
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards 0.5s;
+}
+
+.membros-equipe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px; /* Aumentado o gap */
+    padding: 20px 0;
+}
+
+.membro-equipe {
+    /* Cor de fundo branca com leve transparência */
+    background: rgba(255, 255, 255, 0.9);
+    width: 300px; /* Aumentado a largura */
+    padding: 25px; /* Aumentado o padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px; /* Bordas mais arredondadas */
+    /* Sombra suave da paleta */
+    box-shadow: 0 6px 12px rgba(13, 72, 108, 0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Animação suave */
+    overflow: hidden; /* Garante que a sombra e transformação funcionem corretamente */
+}
+
+.membro-equipe:hover {
+    transform: translateY(-10px); /* Levantamento mais pronunciado no hover */
+    /* Sombra mais proeminente da paleta */
+    box-shadow: 0 12px 24px rgba(13, 72, 108, 0.3);
+}
+
+.membro-equipe__imagem {
+    /* Cor de fundo da paleta */
+    background: #70b0d7;
+    width: 100%;
+    height: 250px; /* Aumentado a altura */
+    margin-bottom: 20px;
+    border-radius: 6px; /* Bordas levemente arredondadas */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Animação de escala suave na imagem no hover do card */
+    transition: transform 0.4s ease;
+}
+
+.membro-equipe:hover .membro-equipe__imagem {
+    transform: scale(1.05); /* Leve zoom na imagem no hover */
+}
+
+
+.membro-equipe__imagem img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.membro-equipe__nome {
+    /* Cor de texto da paleta */
+    color: #0d486c;
+    font-family: "Inter-Bold", sans-serif;
+    font-size: 26px; /* Aumentado o tamanho da fonte */
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.membro-equipe__separador {
+    /* Cor do separador da paleta */
+    background: #456879;
+    width: 60%; /* Aumentado a largura */
+    height: 3px; /* Aumentado a espessura */
+    margin: 15px auto; /* Aumentado a margem */
+    border: none;
+    border-radius: 2px; /* Bordas arredondadas */
+}
+
+.membro-equipe__descricao {
+    /* Cor de texto da paleta */
+    color: #456879;
+    font-family: "Inter", sans-serif;
+    font-size: 19px; /* Aumentado o tamanho da fonte */
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.6; /* Melhorar legibilidade */
+}
+
+/* Animação para fade-in */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+
+.rodape-site {
+    /* Cor de fundo da paleta */
+    background: #70b0d7;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Espaço acima do rodapé */
+}
+
+.rodape__marca {
+    /* Cor da paleta */
+    color: #0d486c;
+    font-family: "Inter-Bold", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.rodape__direitos-autorais {
+    /* Cor da paleta */
+    color: #456879;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: right;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .rodape-site {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .rodape__direitos-autorais {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .quem-somos h2 {
+        font-size: 36px; /* Ajuste para telas menores */
+    }
+
+    .quem-somos__subtitulo {
+        font-size: 18px; /* Ajuste para telas menores */
+    }
+
+    .membro-equipe {
+        width: 95%; /* Ajuste para telas menores */
+        max-width: 300px; /* Limite a largura */
+    }
+
+    .membro-equipe__imagem {
+        height: 200px; /* Ajuste para telas menores */
+    }
+
+    .membro-equipe__nome {
+        font-size: 22px; /* Ajuste para telas menores */
+    }
+
+    .membro-equipe__descricao {
+        font-size: 16px; /* Ajuste para telas menores */
+    }
+}
+
+.brandboook {
+    background: #bee4fb;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    text-align: right;
+}

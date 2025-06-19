@@ -1,0 +1,259 @@
+/* ===== ESTILO GERAL ===== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #bee4fb;
+  color: #0d486c;
+  line-height: 1.6;
+}
+
+/* ===== NAVBAR ===== */
+.navbar-toggler {
+  order: -1;
+  margin-right: auto;
+}
+
+.navbar-brand {
+  text-align: left;
+  color: #0d486c !important;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #3d83ad !important;
+}
+
+.navbar-nav .nav-link {
+  color: #0d486c !important;
+  transition: color 0.3s ease, transform 0.2s ease;
+  padding: 10px 15px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #3d83ad !important;
+  transform: translateY(-2px);
+}
+
+.navbar-nav .nav-link.form {
+  color: #3d83ad !important;
+  font-weight: bold;
+  border-bottom: 2px solid #3d83ad;
+}
+
+.navbar-nav .dropdown-menu {
+  background-color: #bee4fb;
+  border: 1px solid #456879;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav .dropdown-item {
+  color: #0d486c;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .dropdown-item:hover {
+  background-color: #70b0d7;
+  color: #bee4fb;
+}
+
+/* ===== LOGO PRINCIPAL ===== */
+.logo-principal {
+  max-width: 140px;
+  margin-bottom: 1rem;
+}
+
+/* ===== ESTILO GERAL ===== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #bee4fb;
+  color: #0d486c;
+  line-height: 1.6;
+}
+
+/* ===== LOGO PRINCIPAL ===== */
+.logo-principal {
+  max-width: 200px;
+  margin-bottom: 1rem;
+}
+
+/* ===== CONTEÚDO PRINCIPAL ===== */
+main.conteudo {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+section {
+  background-color: #4b606b;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+}
+
+/* ===== TEXTOS E TIPOGRAFIA ===== */
+h1 {
+  font-size: 1.4rem;
+  color: #0d486c;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.3rem;
+  color: #0d486c;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+/* ===== TIPOGRAFIA ===== */
+.fontes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.fonte-bloco {
+  flex: 1 1 200px;
+}
+.areqo {
+  width: 325px;
+  height: 185px;
+}
+.sansSerif {
+  width: 325px;
+  height: 200px;
+}
+
+/* ===== PALETA DE CORES ===== */
+.circulos-cores {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.cor {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: bold;
+  flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* ===== EXEMPLOS DE USO ===== */
+.exemplos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+}
+
+.exemplos img {
+  background-color: #4b606b;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 250px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+.exemplos div {
+  color: #fff;
+  font-size: small;
+}
+
+/* ===== IMAGENS ===== */
+.grade-seguranca img,
+.exemplos-reducao img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+}
+
+.exemplos-reducao p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+}
+/* ===== RODAPÉ ===== */
+.rodape-site {
+  background: #70b0d7;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.rodape__marca {
+  color: #0d486c;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.rodape__direitos-autorais {
+  color: #456879;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: right;
+  margin: 0;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+  .rodape-site {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .rodape__direitos-autorais {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .conteudo {
+    padding: 2rem 1.2rem;
+  }
+
+  .fonte-bloco {
+    min-width: 100%;
+  }
+}
+
+@media (min-width: 769px) {
+  p {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+}

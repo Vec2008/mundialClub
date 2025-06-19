@@ -1,0 +1,163 @@
+.container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px; /* Aumentado o gap para melhor espaçamento */
+    justify-content: center;
+    align-content: center;
+  }
+.painel-de-controle {
+  margin: 20px;
+}
+.visualizer {
+      /* Cor de fundo clara da paleta */
+  background-color: #009af9;
+  padding: 20px; /* Aumentado o padding */
+  /* Borda escura da paleta */
+  border: 1px solid #0d486c;
+  width: 100%; /* Ajuste para flexbox */
+  box-sizing: border-box;
+  border-radius: 8px; /* Bordas mais arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Animação no focus */
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+h2 {
+  text-align: center;
+}
+
+.painel-de-controle {
+  box-sizing: border-box;
+  background: #ffffff;
+  height: 1500px;
+  position: relative;
+  overflow: hidden;
+}
+  
+  .navbar-toggler {
+    order: -1;
+    margin-right: auto;
+    /* Removido margin-right: 0; pois margin-right: auto já faz o trabalho */
+  }
+  
+  .navbar-brand {
+    text-align: left;
+    /* Cor da marca */
+    color: #0d486c !important; /* Usado !important para sobrescrever Bootstrap se necessário */
+    font-weight: bold; /* Deixar a marca mais destacada */
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-brand:hover {
+      color: #3d83ad !important;
+  }
+  
+  
+  /* Adicionado estilo para links da navbar para usar a paleta */
+  .navbar-nav .nav-link {
+      color: #0d486c !important; /* Cor dos links */
+      transition: color 0.3s ease, transform 0.2s ease; /* Animação no hover */
+      padding: 10px 15px; /* Aumentar área clicável */
+  }
+  
+  .navbar-nav .nav-link:hover {
+      color: #3d83ad !important; /* Cor no hover */
+      transform: translateY(-2px); /* Leve levantamento no hover */
+  }
+  
+  .navbar-nav .nav-link.form {
+       color: #3d83ad !important; /* Cor para o link ativo */
+       font-weight: bold;
+       border-bottom: 2px solid #3d83ad; /* Indicador de link ativo */
+  }
+  
+  .navbar-nav .dropdown-menu {
+      background-color: #bee4fb; /* Fundo do dropdown */
+      border: 1px solid #456879;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-nav .dropdown-item {
+      color: #0d486c; /* Cor dos itens do dropdown */
+      transition: background-color 0.3s ease, color 0.3s ease;
+      padding: 10px 20px;
+  }
+  
+  .navbar-nav .dropdown-item:hover {
+      background-color: #70b0d7; /* Fundo no hover do item do dropdown */
+      color: #bee4fb; /* Cor do texto no hover */
+  }
+  
+  
+  .rodape-site {
+    /* Cor de fundo da paleta */
+    background: #70b0d7;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px; /* Espaço acima do rodapé */
+  }
+  
+  .rodape__marca {
+    /* Cor da paleta */
+    color: #0d486c;
+    font-family: "Inter-Bold", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .rodape__direitos-autorais {
+    /* Cor da paleta */
+    color: #456879;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: right;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) { /* Ajuste para telas menores, usando um breakpoint mais comum */
+      .rodape-site {
+          flex-direction: column;
+          text-align: center;
+      }
+  
+      .rodape__direitos-autorais {
+          text-align: center;
+          margin-top: 15px;
+      }
+    
+    .rodape-site {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .rodape__direitos-autorais {
+        text-align: center;
+        margin-top: 15px;
+    }
+    
+    .visualizer {
+      max-width: 100%;
+    }
+}
+@media (min-width: 769px) {
+  .visualizer {
+    width: 500px;
+  }
+  p{
+    font-size: 18px;
+  }
+  out-msgVazia {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+}

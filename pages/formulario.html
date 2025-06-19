@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/formulario.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <title>Mundiais de Clubes</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Mundiais de Clubes</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav me-x mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Grupo A
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./time_palmeiras.html">Palmeiras</a></li>
+              <li><a class="dropdown-item" href="./time_interMiami.html">Inter Miami</a></li>
+              <li><a class="dropdown-item" href="./time_ahly.html">Al Ahly</a></li>
+              <li><a class="dropdown-item" href="./time_portoPC.html">Porto FC</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./quemSomos.html">Quem Somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./formulario.html">Formulário</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./painel.html">Painel de
+              Controle</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./politicas_privacidade.html">Politícas de Privacidade</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="conteudo_form_sugestao">
+      <div class="caixa destaque">
+        <h3>Formulários de sugestão</h3>
+        <p>Compartilhe suas opiniões e ideias sobre o Mundial de Clubes!</p>
+      </div>
+
+      <form class="formulario">
+        <label for="nome1">Nome:</label>
+        <input type="text" id="nome1" placeholder="Digite seu nome:">
+
+        <div class="linha">
+          <div>
+            <label for="pais1">País:</label>
+            <input type="text" id="pais1" placeholder="Digite seu país:">
+          </div>
+          <div>
+            <label for="email1">Email:</label>
+            <input type="email" id="email1" placeholder="Digite seu email:">
+          </div>
+        </div>
+
+        <label for="sugestao">Sugestões:</label>
+        <textarea id="sugestao" placeholder="Escreva sua sugestão:"></textarea>
+
+        <div class="botoes">
+          <button id="buttonS" type="submit">Enviar</button>
+          <button type="reset">Limpar</button>
+        </div>
+      </form>
+    </div>
+    <!-- -------------------------------- -->
+    <div class="conteudo_form_contato">
+      <form class="formulario">
+        <label for="nome2">Nome:</label>
+        <input type="text" id="nome2" placeholder="Digite seu nome:">
+
+        <div class="linha">
+          <div>
+            <label for="pais2">País:</label>
+            <input type="text" id="pais2" placeholder="Digite seu país:">
+          </div>
+          <div>
+            <label for="email2">Email:</label>
+            <input type="email" id="email2" placeholder="Digite seu email:">
+          </div>
+        </div>
+
+        <label for="comentario">Comentários:</label>
+        <textarea id="comentarios" placeholder="Escreva seus comentários:"></textarea>
+
+        <div class="botoes">
+          <button id="buttonC" type="submit">Enviar</button>
+          <button type="reset">Limpar</button>
+        </div>
+      </form>
+
+      <div class="caixa">
+        <h3>Formulários de contato</h3>
+        <p>Tire suas dúvidas, faça comentários ou entre em contato com a gente!</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="rodape-site">
+    <p class="rodape__marca">TECHRÔNIO</p>
+    <p class="rodape__direitos-autorais">
+      Copyright © 2025 TECHRÔNIO. Todos os direitos reservados.
+    </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
+  <script src="../js/script-painel-formulario.js"></script>
+</body>
+
+</html>
