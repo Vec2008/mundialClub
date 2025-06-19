@@ -67,7 +67,7 @@ h2 {
       transform: translateY(-2px); /* Leve levantamento no hover */
   }
   
-  .navbar-nav .nav-link.form {
+  .navbar-nav .nav-link.active {
        color: #3d83ad !important; /* Cor para o link ativo */
        font-weight: bold;
        border-bottom: 2px solid #3d83ad; /* Indicador de link ativo */
